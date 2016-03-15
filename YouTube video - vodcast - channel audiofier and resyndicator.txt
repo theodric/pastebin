@@ -81,4 +81,3 @@ location ~ \.php$ {
 Example crontab entry:
 
 0 4,10,16,22 	* * *	root	echo 'Last update:' > /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && date >> /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && cd /var/www/domain.tld/podcasts/ZastoZatoKurac/mp3 && pwd >> /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && youtube-dl -t -x --audio-format mp3 --audio-quality 96k https://www.youtube.com/user/ZastoZatoKurac --download-archive ZastoZatoKurac-archivefile >>  /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && rename -v s/#// *mp3 >>  /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && chown -vR www-data:www-data * >>  /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && chmod -vR 775 * >>  /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && echo 'ok bye' >> /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt
-

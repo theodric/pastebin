@@ -34,4 +34,3 @@ Grain mix inspired by the proportions given in the Weak Ale recipe on this page:
 http://www.cs.cmu.edu/~pwp/tofi/medieval_english_ale.html
 
 Temperature control idea borrowed from this page: http://yourshoutmate.blogspot.nl/2013/02/real-ale-medieval-style.html
-

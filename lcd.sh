@@ -21,4 +21,3 @@ case "$ARG" in
   "off") gpio -g pwm 18 0
 ;;
 esac
-
