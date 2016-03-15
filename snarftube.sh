@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ## initial downloader for the YouTube audiofier and resyndicator
 ## formerly manual_sync.sh
 
