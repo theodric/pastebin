@@ -1,2 +1,2 @@
 # pastebin
-A mirror of my pastebin posts
+A mirror of <a href="http://pastebin.com/u/theodric">my pastebin posts</a>
