@@ -2,7 +2,7 @@
 ## initial downloader for the YouTube audiofier and resyndicator
 ## formerly manual_sync.sh
 
-[[ $@ ]] || { printf "\nUsage: $0 http://youtube.com/user/ZastoZatoKurac archivefileidentifier [the latter is generally whatever you've decided to call the directory you're synching the youtube channel into]" ; exit 1; }
+[[ $@ ]] || { printf "\nUsage: $0 http://youtube.com/user/ZastoZatoKurac archivefileidentifier\n [the latter arg is ideally whatever you've decided to call the directory you're synching the youtube channel into]\n\n" ; exit 1; }
 
 youtubechannel=${1}
 
