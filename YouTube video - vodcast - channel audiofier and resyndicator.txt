@@ -1,0 +1,84 @@
+[EDIT 20150511: be certain to use the latest and greatest version of youtube-dl, obtained directly from the developer ( https://yt-dl.org/downloads/2015.05.10/youtube-dl ). Google changed something recently such that versions of youtube-dl from before May-ish 2015 no longer index and scrape YouTube channels. Debian Sid's version, as of this writing, is from February 2015, and does not work. I still install the package on Debian, then just replace /usr/local/bin/youtube-dl with the latest version from the URL above (and make sure to chmod +x it).]
+
+[EDIT 20151020: you can also just issue `youtube-dl -U` and it'll do an in-place upgrade of the script. Derp.]
+
+There are several vodcasts I would like to listen to where the video is of little or no value, but since they're only available on YouTube I don't have a way to subscribe that doesn't involve streaming video and everything that entails. This is not compatible with my normal podcast-listening workflow which involves a phone in my pocket with the screen off. I've mashed together some other people's work into a vodcast audiofier+resyndicator to fix that problem.
+
+Reqs for resyndicator:
+
+* cron
+* youtube-dl
+* ffmpeg
+* ffprobe
+* a web server (I'm using nginx)
+* php5 (I'm using FastCGI php5-fpm)
+* DirCaster
+* the will to fix DirCaster's handling of certain characters 
+OR
+* mechanism to strip out un-handled characters from filename, e.g. RENAME(1p) utility
+
+You don't need to use the 'hidden' RSS feed of the YouTube channel because youtube-dl is super-smart and can just handle youtube.com/user/FriendlyUserName style URLs.
+
+This will rip the channel, check the download-archive file to ensure it doesn't re-download anything it's already downloaded, and write the resultant m4a (audio only) files to disk:
+
+youtube-dl -t -x https://www.youtube.com/user/ZastoZatoKurac --download-archive ZastoZatoKurac-archivefile
+
+this does all of the above, but creates much-smaller 96k mp3 files from the native m4a files, then nukes the original m4a files:
+
+youtube-dl -t -x --audio-format mp3 --audio-quality 96k https://www.youtube.com/user/ZastoZatoKurac --download-archive ZastoZatoKurac-archivefile
+
+This needs to be regularly (you decide the definition of 'regularly') executed to scrape the latest content. After the latest (or initial) content has been downloaded, if you did't decide to fix DirCaster, you must strip any characters that won't be parsed correctly when inserted into the RSS feed (#,?,!, etc.) by DirCaster. I use 'rename' which accepts sed syntax and is in the Debian repositories. Usage example:
+
+rename 's/#//' *mp3
+
+I dumped both of these operations into a cronjob to run sequentially. If you've got a better or more-elegant solution, please tell me! I'm @theodric on Twitter.
+
+Download, install, and configure DirCaster (http://dircaster.org/downloads.html) on your php5-enabled webserver. I put individual instances of DirCaster in the directory of each vodcast I'm resyndicating as audio. DirCaster will automagically create an RSS feed of the specified directory's specified type(s) of media files.
+
+Configure your podcatcher app to poll http://domain.tld/podcastname/dircaster.php
+
+FIN
+
+Addendum: my nginx site config, in case anyone's curious. It's not special or complicated.
+
+server {  
+        listen 80;  
+        server_name domain.tld www.domain.tld;  
+  
+        # Path to the root of your installation  
+        root /var/www/domain.tld;  
+  
+        client_max_body_size 10G; # set max upload size  
+        fastcgi_buffers 64 4K;  
+  
+        location ~ ^/(data|config|\.ht|db_structure\.xml|README) {  
+                deny all;  
+        }  
+  
+location /podcasts {  
+    autoindex on;  
+}  
+  
+location ~ \.php$ {  
+        include fastcgi_params;  
+       fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;  
+       fastcgi_param PATH_INFO $2;  
+        fastcgi_pass  127.0.0.1:9001;  
+        fastcgi_index index.php;  
+    }  
+  
+        # Optional: set long EXPIRES header on static assets  
+        location ~* ^.+\.(jpg|jpeg|gif|bmp|ico|png|css|js|swf)$ {  
+                expires 30d;  
+                # Optional: Don't log access to assets  
+                access_log off;  
+        }        
+
+}
+
+---
+
+Example crontab entry:
+
+0 4,10,16,22 	* * *	root	echo 'Last update:' > /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && date >> /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && cd /var/www/domain.tld/podcasts/ZastoZatoKurac/mp3 && pwd >> /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && youtube-dl -t -x --audio-format mp3 --audio-quality 96k https://www.youtube.com/user/ZastoZatoKurac --download-archive ZastoZatoKurac-archivefile >>  /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && rename -v s/#// *mp3 >>  /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && chown -vR www-data:www-data * >>  /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && chmod -vR 775 * >>  /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt && echo 'ok bye' >> /var/www/domain.tld/podcasts/ZastoZatoKurac/logfile.txt
+

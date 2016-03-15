@@ -1,0 +1,37 @@
+Pot holding 2.5l+ for boiling water in
+Copper pot holding 15l+ for the mash
+Another pot holding at least 5l to transfer the finished wort to
+Your normal fermentation equipment
+
+Recipe yielded 4.5l of ale at Ribe, Denmark, July 2-3 2015. (Could have gotten a little more out 10ml at a time, but I didn't want to waste a huge amount of time for little reward or stir up too much fine sediment.) Fermented outside in a jerrycan. Ambient temperatures between 35ºC (day) to 18ºC (night). 24-hour fermentation, calculated 5.18% ABV. I *believe* SG was 1.062, but I could be mis-remembering that. 
+
+1 envelope Danstar Windsor beer/ale yeast
+10l water
+2kg German pale malt
+500g Crystal malt
+750g coarse oatmeal (normal stuff from supermarket, not malted)
+
+Add pale malt to copper pot.
+Heat 2.5l of water so that it feels almost warm to your fingers but not yet hot, then dump over pale malt and stir.
+Boil 2.5l of water.
+Add crystal malt and oatmeal to copper pot and stir.
+Dump the 2.5l of water you just boiled over the mash and stir.
+After 1 hour (or less-- I found the mash slightly too cool at this stage), dump another 2.5l of water into the mash and stir.
+After 45 minutes (or less...), dump another 2.5l of water into the mash and stir.
+Wait 1 hour.
+
+At this point you should see fairly clarified wort sitting on top of the grains in the copper pot. That is - hopefully - what the ale will look like when done.
+
+Set a strainer and some kind of coarse filter over your extra pot. (We wove a strainer panel from willow branches found near the beadmaker's tent at the VikingeCenter, and put a piece of cheesecloth over the top of it to make the filter a bit finer.) Ladle the wort out of the copper pot through the strainer into the extra pot.
+
+Once you've gotten most of the liquid out of the copper pot, set the container with the wort somewhere to allow the finer particles to settle to the bottom. I left mine in the refrigerator for about 5 hours in order to try to prevent wild yeasts from infecting it, or at least slow their growth until I could pitch the correct yeast. (For extra local flavor, you could instead *let* a wild yeast infect it and not even bother pitching. Who knows if what you got would be drinkable, though!)
+
+After it settles, rack it (or ladle it) from the extra pot into your fermenter, leaving the sediment behind. Pitch the yeast directly into the wort and stir/shake. Leave to sit in a warm place (ale likes to be fermented warm-- 25ºC+!) for 24 hours. Drink within 2 days, or 4-5 with refrigeration; since it has no hops, this stuff does not keep.
+
+Mediæval brewers would not have had access to our modern thermometers, so the purpose of the four water-add steps is to attempt to approximate the process of holding the mash at the temperatures required to allow the desired enzymatic processes to take place by gradually raising the temperature of the mash with regular infusions of boiling water, without having to resort to non-authentic equipment. Some adjustments still need to be made to accurately hit the target temperatures-- this was a first attempt, albeit a close one!
+
+Grain mix inspired by the proportions given in the Weak Ale recipe on this page:
+http://www.cs.cmu.edu/~pwp/tofi/medieval_english_ale.html
+
+Temperature control idea borrowed from this page: http://yourshoutmate.blogspot.nl/2013/02/real-ale-medieval-style.html
+
