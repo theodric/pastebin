@@ -13,6 +13,7 @@ BOM:
 	-serial connection (for programming and debug)
 	-(optional) some perfboard
 	-(optional) some headers
+	-This Arduino library: https://z3t0.github.io/Arduino-IRremote/
 
 Wiring:
 	-IR receiver OUT to pin 4
