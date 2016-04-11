@@ -23,7 +23,7 @@ Wiring:
 
 Setup:
 	-Upload code to the Arduino
-	-Connect all the shit up
+	-Connect all the poop up
 	-Plug your TTL serial cable into the Arduino, and open the IDE's serial console
 	-Poke the button on your remote that you want to use as a power-on switch
 	-Replace 11B26D9 in the sketch below with whatever code was printed in the console, being certain to leave the 0x prefix intact.
