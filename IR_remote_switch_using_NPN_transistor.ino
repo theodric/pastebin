@@ -6,7 +6,7 @@ Image:
 	-I mounted mine on a little perfboard. Cute, eh? https://i.imgur.com/MtKy7cg.jpg
 
 BOM:
-	-5v-tolerant Arduino-compatible clone with an ATmega168P
+	-5v-tolerant Arduino-compatible clone with an ATmega168P (or whatever-- but it doesn't need much)
 	-TSOP1736 IR receiver
 	-C547B NPN transistor
 	-4.7k resistor
