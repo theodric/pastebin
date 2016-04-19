@@ -47,7 +47,7 @@ decode_results results;
 
 {
   Serial.begin(9600);
-  Serial.println("IR Receiver Raw Data + Button Decode Test");
+  Serial.println("I'm awake and listening for remote scancodes.");
   irrecv.enableIRIn();
 }
 
@@ -76,7 +76,7 @@ void translateIR()
     break;
 
   default: 
-    Serial.println("nope.");
+    Serial.println("BZZT! wrong.");
 
   }
 
