@@ -33,6 +33,9 @@ Setup:
 Assumptions if using on a computer:
 	-You've enabled the standard ATX 4-second hold-to-poweroff feature in your BIOS to prevent spurious IR activity dropping your device on its head
 	-You have a separate IR receiver for the remote to talk to the software, and you've mapped a software trigger to the same remote button, so that your software is able to gently turn the system off. Because this sketch doesn't do that. This is on-only.
+	
+Expansion:
+	-Add other cases to the switch statement to toggle other pins or perform other actions for different buttons.
 
 Thanks:
 	-Code stolen from http://arduino-info.wikispaces.com/IR-RemoteControl and barely modified.
