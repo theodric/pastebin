@@ -26,13 +26,16 @@ Setup:
 	-Upload code to the Arduino
 	-Connect all the poop up
 	-Plug your TTL serial cable into the Arduino, and open the IDE's serial console
-	-Poke the button on your remote that you want to use as a power-on switch
+	-Poke the button on your remote that you want to use as a power-on switch and observe the hex code printed in the serial console
 	-Replace 11B26D9 in the sketch below with whatever code was printed in the console, being certain to leave the 0x prefix intact.
 	-Reupload modified code to Arduino and test
 
 Assumptions if using on a computer:
 	-You've enabled the standard ATX 4-second hold-to-poweroff feature in your BIOS to prevent spurious IR activity dropping your device on its head
 	-You have a separate IR receiver for the remote to talk to the software, and you've mapped a software trigger to the same remote button, so that your software is able to gently turn the system off. Because this sketch doesn't do that. This is on-only.
+	
+Expansion:
+	-Add other cases to the switch statement to toggle other pins or perform other actions for different buttons.
 
 Thanks:
 	-Code stolen from http://arduino-info.wikispaces.com/IR-RemoteControl and barely modified.
@@ -47,7 +50,7 @@ decode_results results;
 
 {
   Serial.begin(9600);
-  Serial.println("IR Receiver Raw Data + Button Decode Test");
+  Serial.println("I'm awake and listening for remote scancodes.");
   irrecv.enableIRIn();
 }
 
@@ -76,7 +79,7 @@ void translateIR()
     break;
 
   default: 
-    Serial.println("nope.");
+    Serial.println("BZZT! wrong.");
 
   }
 
