@@ -34,90 +34,62 @@ matrix
 	muxstrobe 5		LGUI		    unassigned		N			  	J					U				7				UNASSIGNED	UNASSIGNED	
 	
 	# 3
-	muxstrobe 6		DOWN		    SPACE		    M				K					I				8				UNASSIGNED	UNASSIGNED	
+	muxstrobe 6		EXTRA_INSERT   	SPACE		    M				K					I				8				UNASSIGNED	UNASSIGNED	
 	muxstrobe 7		RALT		    rgui			COMMA			L					O				9				UNASSIGNED	UNASSIGNED	
 	
 	# 4
-	muxstrobe 8		esc		    	LEFT		    PERIOD			SEMICOLON			P				0				UNASSIGNED	UNASSIGNED	
-	muxstrobe 9		RIGHT		    PAD_1		    slash			QUOTE				LEFT_BRACE		MINUS			UNASSIGNED	UNASSIGNED	
+	muxstrobe 8		esc		    	0		    	PERIOD			SEMICOLON			P				0				UNASSIGNED	UNASSIGNED	
+	muxstrobe 9		PAD_PERIOD	    HOME		    slash			QUOTE				LEFT_BRACE		MINUS			UNASSIGNED	UNASSIGNED	
 	
 	# 5
-	muxstrobe 10	  f2			  f5			  rshift		  back_quote	  	  RIGHT_BRACE	  EQUAL			 UNASSIGNED	 UNASSIGNED	
-	muxstrobe 11	PAD_3		    PAD_6		    RSHIFT			ENTER				BACKSLASH		esc				UNASSIGNED	UNASSIGNED	
+	muxstrobe 10	PAGE_UP			LEFT		  	rshift		  	back_quote	  		RIGHT_BRACE		EQUAL			 UNASSIGNED	 UNASSIGNED	
+	muxstrobe 11	END		    	PAD_6		  	RSHIFT			ENTER				BACKSLASH		esc				UNASSIGNED	UNASSIGNED	
 	
 	# 6
-	muxstrobe 12	PAD_2		    PAD_5		    f11				f10					f9				backspace		f3	        PAD_0	
-	muxstrobe 13	PAD_ASTERIX		PAD_9		    f7				PAD_4				PAD_8		    PAD_SLASH		END			f8	
+	muxstrobe 12	UP	   			B				D				F					H				backspace		f3	        DOWN
+	muxstrobe 13	A				C				1				G					I		    	PAD_SLASH		5		f8	
 	
 	# 7
-	muxstrobe 14	  PAD_MINUS		  PAD_PLUS		  UP			  DELETE	     	  PAD_7		      NUM_LOCK		INSERT		PRINTSCREEN	
-	muxstrobe 15	  PAD_ENTER		  PAD_PERIOD	  f12			  PAGE_DOWN			  PAGE_UP		  PAUSE			HOME		SCROLL_LOCK	
+	muxstrobe 14	PAD_MINUS		PAD_PLUS		2				4					Q		    R						7		MEDIA_MUTE	
+	muxstrobe 15	PAGE_DOWN		RIGHT			3				6					9			MEDIA_VOLUME_UP			8		MEDIA_VOLUME_DOWN	
 	#
 end
 
 
 macroblock
 
+macro EXTRA_INSERT
+	PRESS 0
+	PRESS 0
+endmacro
+
 macro F7
-	PUSH_META CLEAR_META all		
-	SET_META ctrl			
-	PRESS C				
-	PRESS T				
-	PRESS V				
-	POP_META			
-	PRESS ENTER			
-	POP_ALL_META			
+	PRESS f
+	PRESS 7
 endmacro
 
 macro f8
-	PUSH_META CLEAR_META all		
-	SET_META LGUI		
-	PRESS z				
-	POP_META			
-	POP_ALL_META
+	PRESS f
+	PRESS 8
 endmacro
 
 
 macro f9
-	PUSH_META CLEAR_META all		
-	SET_META LGUI			
-	PRESS x				
-	POP_META			
-	POP_ALL_META
+	PRESS f
+	PRESS 9
 endmacro
 
 macro f10
-	PUSH_META CLEAR_META all		
-	SET_META LGUI			
-	PRESS c				
-	POP_META			
-	POP_ALL_META
+	PRESS f
+	PRESS 1
+	PRESS 0
 endmacro
 
 macro f11
-	PUSH_META CLEAR_META all		
-	SET_META LGUI			
-	PRESS v				
-	POP_META			
-	POP_ALL_META
+	PRESS f
+	PRESS 1
+	PRESS 1
 endmacro
-
-macro pad_0
-	PUSH_META CLEAR_META all		
-	SET_META LGUI			
-	PRESS y				
-	POP_META			
-	POP_ALL_META			
-endmacro
-
-macro pad_7
-	PUSH_META CLEAR_META all		
-	SET_META LGUI			
-	PRESS t				
-	POP_META			
-	POP_ALL_META
-endmacro
-
 
 macro SLASH ctrl
 	PRESS MEDIA_CALCULATOR		
@@ -128,42 +100,37 @@ macro M ctrl
 endmacro
 
 macro insert
-	PUSH_META CLEAR_META all		
-	SET_META shift			
-	PRESS 3
-	POP_META			
-	POP_ALL_META
+	PRESS i
+	PRESS n
+	PRESS s
 endmacro
 
 endblock
 
 
+
 macroblock
 
+macro pad_0
+		
+endmacro
+
+
 macro pad_4
-	PUSH_META CLEAR_META all		
-	SET_META ctrl			
-	PRESS page_up				
-	POP_META			
-	POP_ALL_META
+
 endmacro
 
 
 macro pad_5
-	PUSH_META CLEAR_META all		
-	SET_META ctrl			
-	Set_Meta shift
-	press t				
-	POP_META			
-	POP_ALL_META
+
 endmacro
 
 macro pad_6
-	PUSH_META CLEAR_META all		
-	SET_META ctrl			
-	PRESS page_down				
-	POP_META			
-	POP_ALL_META
+
+endmacro
+
+macro pad_7
+
 endmacro
 
 
