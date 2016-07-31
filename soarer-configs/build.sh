@@ -1,0 +1,3 @@
+#!/bin/sh
+scas MODIFIED_micro_6112884AllKeysAssigned.sc MODIFIED_micro_6112884AllKeysAssigned.scb
+scwr MODIFIED_micro_6112884AllKeysAssigned.scb
