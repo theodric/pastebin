@@ -81,9 +81,9 @@ remapblock
 		7					F7
 		8					F8
 		9					F9
-		10					F10
-		11					F11
-		12					F12
+		0					F10
+		MINUS				F11
+		EQUAL				F12
 endblock
 
 macroblock
