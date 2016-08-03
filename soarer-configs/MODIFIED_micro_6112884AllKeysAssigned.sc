@@ -1,13 +1,8 @@
 # IBM 6112884 Japanese layout with Alps switches
-# The CPU was removed from the controller board and replaced with a Teensy, but the 4 to 16 line decoder remains (hence using muxstrobe).
+# The CPU was removed from the controller board and replaced with a Pro Micro, but the 4 to 16 line decoder remains (hence using muxstrobe).
 # http://deskthority.net/post114200.html#p114200
 # HaaTa's pics of similar keyboard: http://deskthority.net/post87127.html#p87127
 
-#muxstrobe 10 3b changed from back_quote to backspace
-#muxstrobe 7 19 changed from App to RGUI
-#muxstrobe 0 08 changed from esc to page_down
-#muxstrobe 12 5D changed from backspace to back_quote
-#muxstrobe 10 2a changed from international_1 (ro, also scancode 073, the Japanese key next to rshift) to rshift so I now have two rshifts
 #muxstrobe 2 19 and 5 19 are useless cannot be assigned
 
 
@@ -108,7 +103,7 @@ endblock
 macroblock
 
 macro EXTRA_SYSRQ
-	PUSH_META CLEAR_META all	
+	PUSH_META CLEAR_META all
 	SET_META rgui
 	PRESS SPACE
 	POP_META
