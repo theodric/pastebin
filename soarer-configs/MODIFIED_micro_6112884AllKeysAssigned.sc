@@ -84,6 +84,7 @@ remapblock
 		0					F10
 		MINUS				F11
 		EQUAL				F12
+		ENTER				EXTRA_SYSRQ
 endblock
 
 macroblock
@@ -104,3 +105,35 @@ endmacro
 
 endblock
 
+macroblock
+
+macro EXTRA_SYSRQ
+	PUSH_META CLEAR_META all	
+	SET_META rgui
+	PRESS SPACE
+	POP_META
+	POP_ALL_META
+	PRESS l
+	DELAY 20
+	PRESS o
+	DELAY 20
+	PRESS c
+	DELAY 20
+	PRESS k
+	DELAY 20
+	PRESS s
+	DELAY 20
+	PRESS c
+	DELAY 20
+	PRESS r
+	DELAY 20
+	PRESS e
+	DELAY 20
+	PRESS e
+	DELAY 20
+	PRESS n
+	DELAY 80
+	PRESS enter
+endmacro
+
+endblock
