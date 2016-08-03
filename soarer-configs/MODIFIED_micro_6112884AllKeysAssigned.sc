@@ -55,6 +55,23 @@ matrix
 	#
 end
 
+# need to map the FN key into the base layer (0)
+
+remapblock
+	layer 0
+		APP FN1
+endblock
+
+layerblock
+		FN1	1
+endblock
+
+remapblock
+	layer 1
+		MEDIA_VOLUME_DOWN	MEDIA_PREV_TRACK 
+		MEDIA_MUTE			MEDIA_PLAY_PAUSE 
+		MEDIA_VOLUME_UP		MEDIA_NEXT_TRACK 
+endblock
 
 macroblock
 
