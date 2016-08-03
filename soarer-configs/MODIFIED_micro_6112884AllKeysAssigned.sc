@@ -104,34 +104,3 @@ endmacro
 
 endblock
 
-macroblock
-
-macro f7
-	PRESS f
-	PRESS 7
-endmacro
-
-macro f8
-	PRESS f
-	PRESS 8
-endmacro
-
-macro f9
-	PRESS f
-	PRESS 9
-endmacro
-
-macro f10
-	PRESS f
-	PRESS 1
-	PRESS 0
-endmacro
-
-macro f11
-	PRESS f
-	PRESS 1
-	PRESS 1
-endmacro
-
-endblock
-
