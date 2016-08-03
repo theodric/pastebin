@@ -86,7 +86,7 @@ macroblock
 
 macro EXTRA_PAD_PLUS
 	PRESS 0
-	DELAY 20
+	DELAY 10
 	PRESS 0
 endmacro
 
