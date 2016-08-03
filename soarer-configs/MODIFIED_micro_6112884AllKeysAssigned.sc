@@ -47,7 +47,7 @@ matrix
 	
 	# 6
 	muxstrobe 12	UP	   			B				D				F					H				backspace		f3	        DOWN
-	muxstrobe 13	A					C				1				G					I		    	PAD_SLASH		5		    DELETE	
+	muxstrobe 13	A				C				1				G					I		    	PAD_SLASH		5		    DELETE	
 	
 	# 7
 	muxstrobe 14	PAD_MINUS		PAD_PLUS		2				4					Q		    R						7		MEDIA_VOLUME_DOWN	
@@ -72,6 +72,18 @@ remapblock
 		MEDIA_MUTE			MEDIA_PLAY_PAUSE 
 		MEDIA_VOLUME_UP		MEDIA_NEXT_TRACK 
 		DELETE				INSERT
+		1					F1
+		2					F2
+		3					F3
+		4					F4
+		5					F5
+		6					F6
+		7					F7
+		8					F8
+		9					F9
+		10					F10
+		11					F11
+		12					F12
 endblock
 
 macroblock
