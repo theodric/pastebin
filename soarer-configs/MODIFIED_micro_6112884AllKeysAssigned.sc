@@ -37,7 +37,7 @@ matrix
 	muxstrobe 9		PAD_PERIOD	    HOME		    slash			QUOTE				LEFT_BRACE		MINUS			UNASSIGNED	UNASSIGNED	
 	
 	# 5
-	muxstrobe 10	PAGE_UP			LEFT		  	rshift		  	back_quote	  		RIGHT_BRACE		EQUAL			 UNASSIGNED	 UNASSIGNED	
+	muxstrobe 10	PAGE_UP			LEFT		  	rshift		  	UNASSIGNED	  		RIGHT_BRACE		EQUAL			 UNASSIGNED	 UNASSIGNED	
 	muxstrobe 11	END		    	PAD_6		  	RSHIFT			ENTER				BACKSLASH		CLEAR_AGAIN		UNASSIGNED	UNASSIGNED	
 	
 	# 6
