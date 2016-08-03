@@ -4,7 +4,7 @@
 # HaaTa's pics of similar keyboard: http://deskthority.net/post87127.html#p87127
 
 #muxstrobe 10 3b changed from back_quote to backspace
-#muxstrobe 7 19 changed from App to RGUI
+#muxstrobe 7 19 changed from App to RGUI`																																																												```````````````````````````````````````
 #muxstrobe 0 08 changed from esc to page_down
 #muxstrobe 12 5D changed from backspace to back_quote
 #muxstrobe 10 2a changed from international_1 (ro, also scancode 073, the Japanese key next to rshift) to rshift so I now have two rshifts
@@ -47,11 +47,11 @@ matrix
 	
 	# 6
 	muxstrobe 12	UP	   			B				D				F					H				backspace		f3	        DOWN
-	muxstrobe 13	A				C				1				G					I		    	PAD_SLASH		5		f8	
+	muxstrobe 13	A				C				1				G					I		    	PAD_SLASH		5		    DELETE	
 	
 	# 7
-	muxstrobe 14	PAD_MINUS		PAD_PLUS		2				4					Q		    R						7		MEDIA_MUTE	
-	muxstrobe 15	PAGE_DOWN		RIGHT			3				6					9			MEDIA_VOLUME_UP			8		MEDIA_VOLUME_DOWN	
+	muxstrobe 14	PAD_MINUS		PAD_PLUS		2				4					Q		    R						7		MEDIA_VOLUME_DOWN	
+	muxstrobe 15	PAGE_DOWN		RIGHT			3				6					9			MEDIA_VOLUME_UP			8		MEDIA_MUTE	
 	#
 end
 
@@ -62,6 +62,10 @@ macro EXTRA_INSERT
 	PRESS 0
 	PRESS 0
 endmacro
+
+endblock
+
+macroblock
 
 macro F7
 	PRESS f
