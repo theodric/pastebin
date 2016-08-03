@@ -30,15 +30,15 @@ matrix
 	
 	# 3
 	muxstrobe 6		EXTRA_PAD_PLUS 	SPACE		    M				K					I				8				UNASSIGNED	UNASSIGNED	
-	muxstrobe 7		RALT		    FN1			COMMA			L					O				9				UNASSIGNED	UNASSIGNED	
+	muxstrobe 7		RALT		    FN1				COMMA			L					O				9				UNASSIGNED	UNASSIGNED	
 	
 	# 4
-	muxstrobe 8		ENTER		    	0		    	PERIOD			SEMICOLON			P				0				UNASSIGNED	UNASSIGNED	
+	muxstrobe 8		ENTER		    0		    	PERIOD			SEMICOLON			P				0				UNASSIGNED	UNASSIGNED	
 	muxstrobe 9		PAD_PERIOD	    HOME		    slash			QUOTE				LEFT_BRACE		MINUS			UNASSIGNED	UNASSIGNED	
 	
 	# 5
-	muxstrobe 10	PAGE_UP			LEFT		  	rshift		  	UNASSIGNED	  		RIGHT_BRACE		EQUAL			 UNASSIGNED	 UNASSIGNED	
-	muxstrobe 11	END		    	PAD_6		  	UNASSIGNED		ENTER				BACKSLASH		CLEAR_AGAIN		UNASSIGNED	UNASSIGNED	
+	muxstrobe 10	PAGE_UP			LEFT		  	UNASSIGNED		 	UNASSIGNED	  		RIGHT_BRACE		EQUAL			 UNASSIGNED	 UNASSIGNED	
+	muxstrobe 11	END		    	PAD_6		  	RSHIFT				ENTER				BACKSLASH		CLEAR_AGAIN		UNASSIGNED	UNASSIGNED	
 	
 	# 6
 	muxstrobe 12	UP	   			B				D				F					H				backspace		f3	        DOWN
