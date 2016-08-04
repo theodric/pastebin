@@ -90,13 +90,13 @@ macro EXTRA_PAD_PLUS
 	PRESS 0
 endmacro
 
-macro CLEAR_AGAIN
-	PUSH_META CLEAR_META all		
-	SET_META ctrl			
-	PRESS h				
-	POP_META			
-	POP_ALL_META
-endmacro
+#macro CLEAR_AGAIN
+#	PUSH_META CLEAR_META all		
+#	SET_META ctrl			
+#	PRESS h				
+#	POP_META			
+#	POP_ALL_META
+#endmacro
 
 endblock
 
