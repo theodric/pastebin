@@ -41,8 +41,8 @@ matrix
 	muxstrobe 11	END		    	EXTRA_F1	  	RSHIFT				ENTER				BACKSLASH		CLEAR_AGAIN		UNASSIGNED	UNASSIGNED	
 	
 	# 6
-	muxstrobe 12	UP	   			PAUSE			D				F					H				backspace		f3	        DOWN
-	muxstrobe 13	AUX2			C				1				PAD_ASTERIX			PAD_MINUS    	PAD_SLASH		5		    DELETE	
+	muxstrobe 12	UP	   			PAD_SLASH		D				F					H				backspace		f3	        DOWN
+	muxstrobe 13	AUX2			C				1				PAD_ASTERIX			PAD_MINUS    	PAUSE			5		    DELETE	
 	
 	# 7
 	muxstrobe 14	EXSEL			PAD_PLUS		2				4					PAD_PLUS    PRINTSCREEN				7		MEDIA_VOLUME_DOWN	
@@ -79,7 +79,7 @@ remapblock
 		0					F10
 		MINUS				F11
 		EQUAL				F12
-		TAB				EXTRA_SYSRQ
+		TAB					EXTRA_SYSRQ
 		EXSEL				AUX1
 		LSHIFT				CAPS_LOCK
 endblock
