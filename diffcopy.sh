@@ -5,5 +5,3 @@
 
 diff -qr $1 $2 | sed 's/Only in //g' | sed 's/: //g' | xargs cp -t $3
 
-
-
