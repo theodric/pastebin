@@ -22,4 +22,3 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
 else
 	printf "\nBailing out. Filesystem untouched.\n"
 fi
-

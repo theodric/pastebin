@@ -25,3 +25,4 @@ veracrypt --verbose -t -k "" --protect-hidden=no $1 --password=`echo $password |
 printf "My best guess for the mount location is "
 tail -n1 /proc/mounts | awk '{ print $2 }'
 printf "\n"
+
