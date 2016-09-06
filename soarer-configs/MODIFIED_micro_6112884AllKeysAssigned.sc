@@ -42,7 +42,7 @@ matrix
 	
 	# 6
 	muxstrobe 12	UP	   			PAD_SLASH		D				F					H				backspace		f3	        DOWN
-	muxstrobe 13	AUX2			C				1				PAD_ASTERIX			PAD_MINUS    	PAUSE			5		    DELETE	
+	muxstrobe 13	AUX2			C				1				PAD_MINUS			PAD_ASTERIX    	PAUSE			5		    DELETE	
 	
 	# 7
 	muxstrobe 14	EXSEL			PAD_PLUS		2				4					PAD_PLUS    PRINTSCREEN				7		MEDIA_VOLUME_DOWN	
