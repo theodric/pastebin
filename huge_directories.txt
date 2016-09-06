@@ -1,0 +1,13 @@
+huge directories & copying differences without waiting a million years for rsync:
+
+man getdents on Linux, compile/run listdir source code from that manpage
+
+listdir | awk '{print $5}' | sed 's/d_off//g' > file on both huge directories
+
+(or if you want to not bullshit around with building additional tools, you can use find, but it's slower. In that case,
+
+find /huge/directory > file on both huge directories )
+
+sort file1 file2 | uniq -u > uniq_lines.txt
+
+in source directory, cat uniq_lines.txt | xargs cp -vf -t /media/veracrypt3/batch1/
