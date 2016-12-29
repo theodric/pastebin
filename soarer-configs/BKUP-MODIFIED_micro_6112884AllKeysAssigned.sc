@@ -34,19 +34,19 @@ matrix
 	
 	# 4
 	muxstrobe 8		ENTER		    0		    	PERIOD			SEMICOLON			P				0				UNASSIGNED	UNASSIGNED	
-	muxstrobe 9		PAD_PERIOD	    PAGE_UP		    SLASH			QUOTE				LEFT_BRACE		MINUS			UNASSIGNED	UNASSIGNED	
+	muxstrobe 9		PAD_PERIOD	    HOME		    SLASH			QUOTE				LEFT_BRACE		MINUS			UNASSIGNED	UNASSIGNED	
 	
 	# 5
-	muxstrobe 10	END			PAGE_DOWN		  	UNASSIGNED		 	BACKSLASH	  		RIGHT_BRACE		EQUAL			 UNASSIGNED	 UNASSIGNED	
-	muxstrobe 11	UP		    	EXTRA_F1	  	RSHIFT				ENTER				BACKSLASH		CLEAR_AGAIN		UNASSIGNED	UNASSIGNED	
+	muxstrobe 10	PAGE_UP			LEFT		  	UNASSIGNED		 	BACKSLASH	  		RIGHT_BRACE		EQUAL			 UNASSIGNED	 UNASSIGNED	
+	muxstrobe 11	END		    	EXTRA_F1	  	RSHIFT				ENTER				BACKSLASH		CLEAR_AGAIN		UNASSIGNED	UNASSIGNED	
 	
 	# 6
-	muxstrobe 12	HOME	   			PAD_SLASH		D				F					H				backspace		f3	        LEFT
+	muxstrobe 12	UP	   			PAD_SLASH		D				F					H				backspace		f3	        DOWN
 	muxstrobe 13	AUX2			C				1				PAD_MINUS			PAD_ASTERIX    	PAUSE			5		    DELETE	
 	
 	# 7
 	muxstrobe 14	EXSEL			PAD_PLUS		2				4					PAD_PLUS    PRINTSCREEN				7		MEDIA_VOLUME_DOWN	
-	muxstrobe 15	RIGHT		DOWN			3				6					9			MEDIA_VOLUME_UP			8		MEDIA_MUTE	
+	muxstrobe 15	PAGE_DOWN		RIGHT			3				6					9			MEDIA_VOLUME_UP			8		MEDIA_MUTE	
 	#
 end
 
