@@ -10,7 +10,7 @@ UltiGCode uses the start and end GCodes that are baked into the firmware. Since 
 #define END_OF_PRINT_RETRACTION 20   // number of mm to retract when printer goes idle
 ```
 
-...that causes E3D V6 hotends to make a hard ball of filament that jams the nozzle/heatbreak and requires disassembly and cutting off the ball *before each and every print.* "RepRap (Marlin/Sprinter)" allows us to specify our own start and end GCODE, mitigating this issue. I start by moving the nozzle to the X tower and squirting out some filiment, and end by killing the unncessary retracts.
+...that causes E3D V6 hotends to make a hard ball of filament that jams the nozzle/heatbreak and requires disassembly and cutting off the ball *before each and every print.* "RepRap (Marlin/Sprinter)" allows us to specify our own start and end GCODE, mitigating this issue. I start by moving the nozzle to the X tower and squirting out some filament, and end by killing the unncessary retracts.
 
 Here are the blocks I am successfully using with my OLP (original/Kickstarter) 12V heater + E3D V6.
 
