@@ -1,15 +1,16 @@
 With firmware 2.3.5, and using Cura 15.04.6, I configured my machine profile following the usual settings...except for one thing: I set the "GCode Flavor" to "RepRap (Marlin/Sprinter)" instead of "UltiGCode." Why?
 
 UltiGCode uses the start and end GCodes that are baked into the firmware. Since DreamMaker is so reticent to release code, we cannot fix the...
-CODE: SELECT ALL
+```
 #define END_OF_PRINT_RETRACTION 20   // number of mm to retract when printer goes idle
+```
 
 ...that causes E3D V6 hotends to make a hard ball of filament that jams the nozzle/heatbreak and requires disassembly and cutting off the ball before each and every print. "RepRap (Marlin/Sprinter)" allows us to specify our own start and end GCODE, mitigating this issue. I start by moving the nozzle to the X tower and squirting out some filiment, and end by killing the unncessary retracts.
 
 Here are the blocks I am successfully using with my OLP (original/Kickstarter) 12V heater + E3D V6.
 
 start.gcode
-CODE: SELECT ALL
+```
 ;Sliced at: {day} {date} {time}
 ;Basic settings: Layer height: {layer_height} Walls: {wall_thickness} Fill: {fill_density}
 ;Print time: {print_time}
@@ -31,10 +32,11 @@ G92 E0                  ;zero the extruded length again
 G1 F{travel_speed}
 ;Put printing message on LCD screen
 M117 Printing...
+```
 
 
 end.gcode
-CODE: SELECT ALL
+```
 ;End GCode
 M104 S0                     ;extruder heater off
 M140 S0                     ;heated bed heater off (if you have it)
@@ -45,6 +47,7 @@ G28 X0 Y0                              ;move X/Y to min endstops, so the head is
 M84                         ;steppers off
 G90                         ;absolute positioning
 ;{profile_string}
+```
 
 
 You can either edit these into your current_profile.ini or paste them into the appropriate start/end tab that appears once you switch your flavor to Marlin. Old GCODE files you have produced will not have these modifications in them-- you have to re-slice your old models if you want to benefit from my start/end blocks.
