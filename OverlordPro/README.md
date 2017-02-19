@@ -1,3 +1,8 @@
+##WORKING E3D EXTRUSION-JAM WORKAROUND
+###Successfully run an E3D V6 hotend in a DreamMaker Overlord Pro with firmware 2.3.5 without the f'in thing jamming constantly
+
+####*a work in progress*
+
 With firmware 2.3.5, and using Cura 15.04.6, I configured my machine profile following the usual settings...except for one thing: I set the "GCode Flavor" to "RepRap (Marlin/Sprinter)" instead of "UltiGCode." Why?
 
 UltiGCode uses the start and end GCodes that are baked into the firmware. Since DreamMaker is so reticent to release code, we cannot fix the...
@@ -56,3 +61,4 @@ Caveat: you print flow will look a little different with Marlin GCODE. You'll ha
 
 I've run several prints in a row now without issue, but I make no guarantees about performance. I tried this on a whim and was pleasantly surprised when it didn't catch on fire.
 
+My current_profile.ini is avaialble in this repo, if you trust me with your printer.
