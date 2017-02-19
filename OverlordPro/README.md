@@ -61,4 +61,4 @@ Caveat: you print flow will look a little different with Marlin GCODE. You'll ha
 
 I've run several prints in a row now without issue, but I make no guarantees about performance. I tried this on a whim and was pleasantly surprised when it didn't catch on fire.
 
-My current_profile.ini is avaialble in this repo, if you trust me with your printer.
+My current_profile.ini is available in this repo, if you trust me with your printer.
