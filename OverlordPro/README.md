@@ -29,7 +29,7 @@ M82        ;set extruder to absolute mode
 M107       ;start with the fan off
 G28          ;home head
 ;G28 Z0     ;move Z to min endstops
-G1 X-55 Y-64.81 Z2 F12000 ;move the platform to the X tower a 2mm
+G1 X-55 Y-64.81 Z2 F12000 ;move the platform to the X tower at 2mm height
 G92 E0                  ;zero the extruded length
 G1 F200 E10              ;extrude 10mm of feed stock
 G1 Z15 F12000 E15      ;extrude another 10mm while lifting fast
