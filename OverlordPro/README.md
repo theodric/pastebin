@@ -1,7 +1,7 @@
 ##WORKING E3D EXTRUSION-JAM WORKAROUND
 ###Successfully run an E3D V6 hotend in a DreamMaker Overlord Pro with firmware 2.3.5 without the f'in thing jamming constantly
 
-####*a work in progress*
+####*a work in progress, which nevertheless works already*
 
 With firmware 2.3.5, and using Cura 15.04.6, I configured my machine profile following the usual settings...except for one thing: I set the "GCode Flavor" to "RepRap (Marlin/Sprinter)" instead of "UltiGCode." Why?
 
