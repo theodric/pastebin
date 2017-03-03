@@ -3,9 +3,12 @@ echo If you didn't run this as Administrator, it won't work. Just sayin'
 echo.
 echo --== B L I T Z K R I E G ==--
 taskkill /f /im OneDrive.exe
+echo.
 echo I don't care to check what OS wordlength you're running,
 echo so I will just attempt to run both the 32- and 64-bit uninstallers.
 echo The non-applicable one for the current OS simply won't run, so fuck it.
+echo You'll see an error message below as a result. Ignore.
+echo.
 %SystemRoot%\System32\OneDriveSetup.exe /uninstall
 %SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall
 rd "%UserProfile%\OneDrive" /Q /S
