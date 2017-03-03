@@ -4,10 +4,11 @@ This is a batch file and 2 registry files to completely remove OneDrive from a W
 
 ## Use
 
-Download all 3 files.
-Open cmd.exe as Administrator
-Run fuckyouonedrive.bat
-Reboot.
+* Download all 3 files.
+* Open cmd.exe as Administrator
+* Run fuckyouonedrive.bat
+* Reboot.
+
 --done--
 
 ## Thanks
