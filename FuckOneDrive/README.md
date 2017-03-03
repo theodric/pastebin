@@ -2,6 +2,12 @@
 
 This is a batch file and 2 registry files to completely remove OneDrive from a Windows 10 system. Might also work on Windows 8.x, but why would you still be running Windows 8.x?
 
+## Why?
+
+* Spite - Microsoft forces this shit on you, infects every fucking file dialog with a OneDrive icon, and offers no direct way to remove it
+* OneDrive is fucking garbage
+* I already have Google Drive, ownCloud, Keybase, syncthing, and a regular rsync cronjob. I don't need the Microsoft Edge of cloud storage as well.
+
 ## Use
 
 * Download all 3 files.
