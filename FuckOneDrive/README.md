@@ -19,5 +19,6 @@ This is a batch file and 2 registry files to completely remove OneDrive from a W
 
 ## Thanks
 https://techjourney.net/disable-or-uninstall-onedrive-completely-in-windows-10/
+
 https://techjourney.net/hide-remove-onedrive-from-windows-10-file-explorer-navigation-pane-folder-tree/
 
