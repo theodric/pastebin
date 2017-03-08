@@ -1,7 +1,7 @@
 @echo off
 echo If you didn't run this as Administrator, it won't work. Just sayin'
 echo.
-echo --== B L I T Z K R I E G ==--
+echo --== L I G H T N I N G S T R I K E ==--
 taskkill /f /im OneDrive.exe
 echo.
 echo I don't care to check what OS wordlength you're running,

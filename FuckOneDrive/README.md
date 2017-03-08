@@ -5,7 +5,7 @@ This is a batch file and 2 registry files to completely remove OneDrive from a W
 ## Why?
 
 * Spite - Microsoft forces this shit on you, infects every fucking file dialog with a OneDrive icon, and offers no direct way to remove it
-* OneDrive is fucking garbage software created by an evil company who I wouldn't trust with the contents of my septic tank, let alone muh n00dz
+* OneDrive is^W^W^Wgreat but I don't use it
 * I already have Google Drive, ownCloud, Keybase, syncthing, and a regular rsync cronjob. I don't need the Microsoft Edge of cloud storage as well.
 
 ## Use
