@@ -57,7 +57,7 @@ G90                         ;absolute positioning
 
 You can either edit these into your current_profile.ini or paste them into the appropriate start/end tab that appears once you switch your flavor to Marlin. Old GCODE files you have produced will not have these modifications in them-- you have to re-slice your old models if you want to benefit from my start/end blocks.
 
-Caveat: you print flow will look a little different with Marlin GCODE. You'll have a progress readout in degrees Celsius, first for bed heating and then for nozzle heating. You'll also lose the indication of how much longer the print will run for. I can deal with this, personally.
+Caveat: you print flow will look a little different with Marlin GCODE. You'll have a progress readout in degrees Celsius, first for bed heating and then for nozzle heating. 
 
 I've run several prints in a row now without issue, but I make no guarantees about performance. I tried this on a whim and was pleasantly surprised when it didn't catch on fire.
 
